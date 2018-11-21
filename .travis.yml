@@ -1,4 +1,9 @@
-install:
+sudo: required
+
+services:
+  - docker
+
+before install:
 - docker pull steinko/timeloggingserver
 
 deploy:
