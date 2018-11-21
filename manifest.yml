@@ -4,6 +4,8 @@ applications:
   docker:
     image: steinko/timeloggingserver
     username: timeloggingserver
+  env:
+    CF_DOCKER_PASSWORD: DavidBowie1!
 
 
 
