@@ -1,0 +1,10 @@
+---
+applications:
+- name: timeLoggingSteinko
+  docker:
+    image: steinko/timeloggingserver
+    username: timeloggingserver
+
+
+
+
