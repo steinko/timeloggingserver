@@ -8,14 +8,17 @@
     "npm": "6.4.1"
   },
   "scripts": {
-    "test": "",
+    "test": "mocha",
     "start": "",
     "build": ""
   },
   "author": "steinko",
   "license": "ISC",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "mocha": "^5.2.0"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",
