@@ -1,0 +1,29 @@
+{
+  "name": "timeloggingserver",
+  "version": "0.0.1",
+  "description": "Time Logging Sever",
+  "main": "index.js",
+  "engines": {
+    "node": "10.10.0",
+    "npm": "6.4.1"
+  },
+  "scripts": {},
+  "author": "steinko",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {},
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steinko/timeloggingserver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/steinko/timeloggingserver/issues"
+  },
+  "homepage": "https://github.com/steinko/timeloggingserver#readme"
+}
