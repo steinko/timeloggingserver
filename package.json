@@ -9,12 +9,14 @@
   },
   "scripts": {
     "test": "mocha",
-    "start": "",
+    "start": "json-server --watch db.json --port 3030",
     "build": ""
   },
   "author": "steinko",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "json-server": "^0.14.0"
+  },
   "devDependencies": {
     "assert": "^1.4.1",
     "mocha": "^5.2.0"

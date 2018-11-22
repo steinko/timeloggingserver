@@ -1,11 +1,9 @@
 ---
 applications:
 - name: timeLoggingSteinko
-  env:
-    CF_DOCKER_PASSWORD: DavidBowie1!
   docker:
-    image: steinko/timeloggingserver
-    username: timeloggingserver
+    image: timelogingserver
+   
 
 
 

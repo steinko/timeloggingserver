@@ -1,5 +1,6 @@
-FROM clue/json-server
+FROM node:9-slim 
 COPY . ./
 WORKDIR ./
-CMD ["docker", "run", "-d", "-p", "3030:80" "-v" "./db.json:/data/db.json", "clue/json-server"]
+RUN npm install
+CMD ["npm", "start"]
  

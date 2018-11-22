@@ -8,7 +8,9 @@ services:
   - docker
 
 before install:
-- docker pull steinko/timeloggingserver
+- npm install  
+- docker build -t timelogingserver .
+
 
 deploy:
   provider: cloudfoundry
