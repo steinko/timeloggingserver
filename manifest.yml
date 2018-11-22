@@ -1,6 +1,6 @@
 ---
 applications:
-- name: timeLoggingSteinko
+- name: timeLogingServer
   docker:
     image: timelogingserver
    
