@@ -1,9 +1,9 @@
-FROM node:9-slim 
-COPY . ./
-COPY /bin/bash /bin/bash
-COPY /usr/local/bin/bash /usr/local/bin/bash
-COPY /bin/sh /bin/sh
-WORKDIR ./
+FROM node:9-slim
+MAINTAINER Stein Korsveien <steinkorn@gmail.com>
+USER root
+RUN mkdir app
+COPY . ./app
+WORKDIR ./app
 RUN npm install
 CMD ["npm", "start"]
  
