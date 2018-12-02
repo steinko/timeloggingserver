@@ -9,17 +9,22 @@ services:
 
 before install:
 - npm install 
-- docker build -t timelogingserver
+- docker build -t timelogingserver .
 
 script:
 - docker run -it  timelogingserver  npm test 
 - curl http://localhost:3030.
 
+deploy:
+  provider: script
+  script: bash docker_push
+  on:
+    branch: master
 
 deploy:
   deploy:
   provider: gae
-  keyfile: api-key.jon
+  keyfile: api-key.json
   project: TimeLoggingServer
   on:
     branch: master
