@@ -7,11 +7,8 @@ node_js:
 services:
   - docker
 
-before install:
-- npm install 
-- docker build -t timelogingserver .
-
 script:
+- docker build -t timelogingserver .
 - docker run -it  timelogingserver  npm test 
 - curl http://localhost:3030.
 
