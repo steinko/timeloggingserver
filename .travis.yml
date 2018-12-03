@@ -18,10 +18,10 @@ deploy:
   on:
     branch: master
 
-deploy:
-  deploy:
-  provider: gae
-  keyfile: api-key.json
-  project: TimeLoggingServer
-  on:
-    branch: master
+##deploy:
+ ## deploy:
+ ## provider: gae
+  ##keyfile: api-key.json
+  ##project: TimeLoggingServer
+ ##on:
+  ##  branch: master
