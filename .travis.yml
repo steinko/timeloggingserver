@@ -8,8 +8,8 @@ services:
   - docker
 
 script:
-- docker build -t timelogingserver .
-- docker run  -p 3030:3030 -it  timelogingserver  npm test 
+- docker build -t steinko/timelogingserver .
+- docker run  -p 3030:3030 -it  steinko/timelogingserver  npm test 
 ##- curl http://localhost:3030.
 
 deploy:
