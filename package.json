@@ -10,13 +10,16 @@
   "scripts": {
     "test": "mocha",
     "start": "node server.js",
-    "build": ""
+    "build": "",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "steinko",
   "license": "ISC",
   "dependencies": {
     "cfenv": "^1.1.0",
-    "json-server": "^0.14.0"
+    "json-server": "^0.14.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "assert": "^1.4.1",
@@ -35,5 +38,6 @@
   "bugs": {
     "url": "https://github.com/steinko/timeloggingserver/issues"
   },
-  "homepage": "https://github.com/steinko/timeloggingserver#readme"
+  "homepage": "https://github.com/steinko/timeloggingserver#readme",
+  "snyk": true
 }
